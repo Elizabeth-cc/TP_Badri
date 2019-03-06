@@ -21,6 +21,7 @@ public class Trajet {
 			this.kilometrageArrivee = kilometrageArrivee;
 			this.limousine = limousine;
 			this.chauffeur = chauffeur;
+			this.chauffeur.ajouterTraj(this);
 		}catch(Exception e) {
 			System.out.println("chauffeur introuve");
 			//
