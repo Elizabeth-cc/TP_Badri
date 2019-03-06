@@ -83,7 +83,7 @@ public class Compagnie {
 						ajouterTrajet();
 						break;
 					case 4:	
-						getLimousinesParChauffeur();         // cette fonction ne fonctionne pas. SVP arranger
+						System.out.println(getLimousinesParChauffeur());
 						break;
 					case 5:
 						for (int i = 0; i < trajets.size(); i++) {
@@ -210,7 +210,7 @@ public class Compagnie {
 		String limousines = "";
 
 		String input = scan.nextLine();
-
+		
 		for (Chauffeur chauffeur : chauffeurs) {
 			if (chauffeur.getIdentification().equalsIgnoreCase(input)) {
 				for (Trajet trajet1 : chauffeur.getTrajets()) {
