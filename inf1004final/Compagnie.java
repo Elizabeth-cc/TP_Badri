@@ -92,8 +92,12 @@ public class Compagnie {
 					case 0:
 						arret = true;
 						break;
-					}	
-				scan.close();}}}
+					}
+				}
+			}
+
+		scan.close();
+		}
 
 	// Ajouter un chauffeur dans la liste
 	public static void ajouterChauffeur() throws TropDeChauffeursException {
